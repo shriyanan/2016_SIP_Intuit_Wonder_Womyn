@@ -7,6 +7,7 @@
     <link rel="stylesheet" 
     href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
  <link rel="stylesheet" type = "text/css" href="code.css">
+
   
 
     <!-- jQuery library -->
@@ -17,23 +18,26 @@
 <body>
 <div class="nav">
 	
-	<ul>
-		<li><img src="https://github.com/kaurjasleen/2016_SIP_Intuit_Wonder_Womyn/blob/master/wonderwomyn.png?raw=true" id="logo" </a></li>
+   	<ul>
+		<li><img src="wonderwomyn.png" id="logo" </a></li>
   <li class = "active" ><a href="homepage.html">HOME</a></li>
   <li class="dropdown">
     <a class="dropbtn">EDUCATION</a>
     <div class="dropdown-content">
       <a href="whycollege.html">INFORMATION</a>
-      <a href="#">FIND YOUR FA</a>
+      <a href="code.html">FIND YOUR FA</a>
     </div>
   </li>
   <li><a href="jobs.html">JOBS</a></li>
-	<li><a href="involved.html">GET INVOLVED</a></li>
+	<li><a href="getinvolved.html">GET INVOLVED</a></li>
  <li><a href="aboutus.html">ABOUT US</a></li>
   <li><a href="stories.html">STORIES</a></li>
+ <li><a href="form.html">HELP OUT</a></li>
+				
 </ul>
 	</div>
-  
+  <!-- particles.js container -->
+<div id="particles-js"></div>
     <br>
       <div><h1>Search For Financial Aid</h1></div>
    <br> <br>
@@ -145,9 +149,26 @@
 
 </div> 
 	
-	
+
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+<!-- stats.js -->
+<script src="stats.js"></script>
+
 <script src="http://listjs.com/no-cdn/list.js"></script>
 	 <script type="text/javascript"src="code.js"></script>
+	
+	<script>
+
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
 	
 	</body>	
 </html>

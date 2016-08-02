@@ -33,4 +33,3 @@ $('#filter-none').click(function() {
   featureList.filter();
   return false;
 });
-

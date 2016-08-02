@@ -6,10 +6,12 @@
     <link rel="stylesheet" 
     href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
  <link rel="stylesheet" type = "text/css" href="aboutus.css">
+	
     <script type="text/javascript"src="home.js"></script>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
     
 
     
@@ -38,15 +40,26 @@ $(document).ready(function(){
         
         
   
-        <ul>
-			<li><img src="wonderwomyn.png" id="logo" </a></li>
-  <li><a class="active" href="homepage.html.html">HOME</a></li>
-  <li><a href="aboutme.html">EDUCATION</a></li>
-  <li><a href="aboutme.html">JOBS</a></li>
-  <li><a href="spotify.html">GET INVOLVED</a></li>
-	<li><a href="aboutus.html">ABOUT US</a></li>
+           	<ul>
+		<li><img src="wonderwomyn.png" id="logo" </a></li>
+  <li class = "active" ><a href="homepage.html">HOME</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">EDUCATION</a>
+    <div class="dropdown-content">
+      <a href="whycollege.html">INFORMATION</a>
+      <a href="code.html">FIND YOUR FA</a>
+    </div>
+  </li>
+  <li><a href="jobs.html">JOBS</a></li>
+	<li><a href="getinvolved.html">GET INVOLVED</a></li>
+ <li><a href="aboutus.html">ABOUT US</a></li>
+  <li><a href="stories.html">STORIES</a></li>
+ <li><a href="form.html">HELP OUT</a></li>
+				
 </ul>
 
+ <!-- particles.js container -->
+<div id="particles-js"></div>
 <div class="container">
  <div class="title"><br>ABOUT US</div>
 </div>
@@ -65,14 +78,14 @@ $(document).ready(function(){
 	   
 	 
 
-      <div class='card'>
+   <div class='card'>
   <h1>
    Shriya Nandwani
   </h1>
   <img src='shriya.png'>
   <p class='bio'>
    <br>Shriya Nandwani is a junior at 	
-        Archbishop Mitty High School. The fields of computer science and entrepreneurship excite her greatly! Her hobbies include playing golf, volunteering, being a part of her school's speech and debate team, hanging out with her friends, and of course coding! Shriya knows that she wants to make a differenvce in the world!
+        Archbishop Mitty High School. The fields of computer science and entrepreneurship hold her interests. Her hobbies include playing golf, volunteering, being a part of her school's speech and debate team, hanging out with her friends, and of course coding! Shriya knows that she wants to make a differenvce in the world!
 		  </p>
       </div>
   </p>
@@ -96,7 +109,7 @@ $(document).ready(function(){
   </h1>
   <img src='jasleen.png'>
   <p class='bio'>
-	  <br> Jasleen Kaur is a rising senior at Granada Hills Charter High School. She loves to play basketball with her friends. She volunteers her time every week teaching kids Punjabi and helping out at the food pantry. She loves to code as well.
+	  <br> Jasleen Kaur is a rising senior at Granada Hills Charter High School. She loves to play basketball with her friends, along with singing and dancing. She volunteers every week, teaching kids Punjabi and helping out at the food pantry. She loves to code as well.
   </p>
 </div>
  </p>
@@ -107,8 +120,27 @@ $(document).ready(function(){
   </h1>
   <img src='trisha.png'>
   <p class='bio'>
-	 <br>  Trisha Wasson, a rising 
+	 <br>  Trisha Wasson is a rising 
 		senior at Mission San Jose High School. Her friends describe her as an outgoing person who is 
 		funny and really fun to be around. She loves to swim, draw, volunteer helping kids, hangout with my friends. But the most amusing thing to her is being able to code whenever she gets to.
   </p>
 </div>
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+<!-- stats.js -->
+<script src="stats.js"></script>
+
+<script src="http://listjs.com/no-cdn/list.js"></script>
+	 <script type="text/javascript"src="code.js"></script>
+	
+	<script>
+
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>

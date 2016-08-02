@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title> Job Search </title> 
+    <link rel="stylesheet" href="jobs.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'> 
+	  <link rel="stylesheet" type = "text/css" href="code.css">
+	   <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- list.js library -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+  </head>
+  
+  <body> 
+  
+
+	     	<ul>
+		<li><img src="wonderwomyn.png" id="logo" </a></li>
+  <li class = "active" ><a href="homepage.html">HOME</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">EDUCATION</a>
+    <div class="dropdown-content">
+      <a href="whycollege.html">INFORMATION</a>
+      <a href="code.html">FIND YOUR FA</a>
+    </div>
+  </li>
+  <li><a href="jobs.html">JOBS</a></li>
+	<li><a href="getinvolved.html">GET INVOLVED</a></li>
+ <li><a href="aboutus.html">ABOUT US</a></li>
+  <li><a href="stories.html">STORIES</a></li>
+ <li><a href="form.html">HELP OUT</a></li>
+				
+</ul>
+  <!-- particles.js container -->
+<div id="particles-js"></div>
+   
+    <h1>Find A Job That Suits You</h1>
+<!--     <h3> DID YOU KNOW? </h3>
+ -->    
+      <div class = "box">
+      <p class ="job" id = "hook">
+       Find over 7 million jobs at the click of a button, customized to fit your search. <br>
+       Don't limit yourself to using one job finder website or having to go through the torture of 
+       creating accounts in each site and finding out that they don't have what you need. 
+       Instead, use WonderWomyn to search through all the big job finder web sites for the job you think is right for you. 
+       </p>
+      <p class="job" id ="tips" > Before you start to look for a job, remember these tips: <br>
+        - To get a job, you need to have the necessary skills.<br>
+       - Update your resume. If you do not have one, create one. Don't forget, bragging is not a bad thing.(f you need help with <br> &nbsp &nbspbuilding your resume, go to <a href="https://www.resumehelp.com/resume/how-it-works.aspx"> Resume Helper</a>)<br> 
+     - Don't solely rely on online applications. Make sure to follow up by going to the store in person. <br>
+     - Update your LinkedIn profile. These are just as important as resumes.<br>
+     - Set yourself apart through your application, resume, and LinkedIn. You want to be remembered.<br>
+     - Polish your social media. You don't want the employer/company to have a bad impression of you. <br>
+     - Keep an open mind. Sometimes you receive oppurtunities that might 
+       not be what you want, but they will be what you need. 
+   <!-- <p class="job"> If you need help with building your resume, go to <a href="https://www.resumehelp.com/resume/how-it-works.aspx"> Resume Helper</a>.</p> -->
+   <p class = "job" > 
+     <small> 
+     Enter in a keyword for the type of job you want, the location, your age, and/or etc.  
+     </small>
+      </p>
+		  <br> 
+		  <br>
+    
+     
+    <div id="search">
+    <script>
+  (function() {
+    var cx = '016264178036300772028:m8pnd_1p4ao';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+</div>
+	  <!-- scripts -->
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+<!-- stats.js -->
+<script src="stats.js"></script>
+
+<script src="http://listjs.com/no-cdn/list.js"></script>
+	 <script type="text/javascript"src="code.js"></script>
+	
+	<script>
+
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+<!-- 
+This is the code for the search       <script>
+  			(function() {
+    			var cx = '016264178036300772028:m8pnd_1p4ao';
+    			var gcse = document.createElement('script');
+    			gcse.type = 'text/javascript';
+    			gcse.async = true;
+    			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    			var s = document.getElementsByTagName('script')[0];
+    			s.parentNode.insertBefore(gcse, s);
+  			})();
+    	</script>
+			<gcse:searchbox></gcse:searchbox>
+ -->
+    <!-- 
+</div>
+    <div id= "results">
+<!~~ This here is the code for the results to show up  ~~>
+      <gcse:searchresults></gcse:searchresults>
+    </div>
+ -->
+    
+  </body>
+</html>
